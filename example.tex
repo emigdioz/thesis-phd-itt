@@ -1,0 +1,103 @@
+\documentclass[]{thesis-phd-itt}
+
+%\usepackage{layout}
+
+\makeindex[columns=3, title=Index, intoc]
+
+\begin{document}
+%\layout
+\frontmatter % Roman style first page numbers
+\title{A Comparative Analysis of Hops-based Alcoholic Beverages}
+\titlespanish{Un analisis comparativo of bebidas alcoholicas}
+
+\authors{\texorpdfstring
+	{\href{your web site or email address}{Hugh Jass}}
+	{Author Name}
+}
+\addresses  {\groupname\\\deptname\\\univname}
+\date       {\today}
+\fecha      {6 de Mayo, 2015}
+
+\maketitle
+
+\pdfbookmark[1]{Acknowledgements}{acknowledgements}
+\chapter*{Acknowledgements}
+
+Put your acknowledgements here.
+
+\pdfbookmark[1]{Abstract}{Abstract}
+\chapter*{Abstract}
+\lipsum[1]
+
+\pdfbookmark[1]{Resumen}{Resumen}
+\chapter*{Resumen}
+\lipsum[1]
+
+%*******************************************************
+% Table of Contents
+%*******************************************************
+\pdfbookmark[1]{\contentsname}{tableofcontents}
+
+\setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
+\setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
+
+\tableofcontents 
+
+%*******************************************************
+% List of Figures and of the Tables
+%*******************************************************
+
+%*******************************************************
+% List of Figures
+%*******************************************************    
+\pdfbookmark[1]{\listfigurename}{lof}
+\listoffigures
+
+%*******************************************************
+% List of Tables
+%*******************************************************
+\pdfbookmark[1]{\listtablename}{lot}
+\listoftables
+
+%*******************************************************
+% List of Listings
+%******************************************************* 
+%\pdfbookmark[1]{\lstlistlistingname}{lol}
+%\lstlistoflistings 
+
+%*******************************************************
+% Acronyms
+%*******************************************************
+\pdfbookmark[1]{Acronyms}{acronyms}
+\chapter*{Acronyms}
+\begin{acronym}[UML]
+	\acro{DRY}{Don't Repeat Yourself}
+	\acro{API}{Application Programming Interface}
+	\acro{UML}{Unified Modeling Language}
+\end{acronym}
+\mainmatter % Arabic style main page numbers
+\part{First Part of My Thesis}
+
+\chapter{Introduction}
+\PARstart{L}{ore}m ipsum dolor sit amet\index{Lorem}, consectetur adipiscing elit. Quisque imperdiet maximus tortor, vel sollicitudin dui vestibulum vitae. Duis enim mi, posuere non enim lacinia, sagittis commodo mi. Vivamus nibh dolor, interdum id magna sit amet, vestibulum laoreet nulla. In ac eros sed tellus fermentum lobortis aliquam ut diam. Phasellus a blandit lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nibh ante, egestas non dapibus id, rutrum in elit. Donec vel massa ut velit tempus hendrerit quis eu nisi. Nullam eu placerat enim, ultricies suscipit turpis. Phasellus lectus orci, vehicula sit amet nulla in, mollis lacinia diam. Cras hendrerit vehicula massa, vitae sodales ipsum suscipit eget. Phasellus hendrerit nisi sed sagittis semper.
+
+\section{A Section}
+\lipsum[1-4] % This is just some filler text. Remove before you start writing
+
+\section{Another Section}
+\lipsum[1] % This is just some filler text. Remove before you start writing
+
+\chapter{Another Chapter}
+\lipsum[1] % This is just some filler text. Remove before you start writing
+
+\section{Yet Another Section}
+\lipsum[1] % This is just some filler text. Remove before you start writing
+
+\part{Another Part}
+
+\chapter{Yet Another Chapter}
+\lipsum[1] % This is just some filler text. Remove before you start writing
+
+\printindex
+	
+\end{document}
